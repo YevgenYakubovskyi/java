@@ -12,7 +12,11 @@ public class Lab2 {
                 {4, 5, 2},
                 {7, 8, 2}
         };
-        short[][] C = new short[3][3];
+        if (B.length != B[1].length){
+            System.out.println("К-сть стовпців має бути рівною к-сті рядків");
+            return;
+        }
+        short[][] C = new short[B.length][B.length];
 
         System.out.println("\nB matrix: ");
         for (short[] shorts : B) {
